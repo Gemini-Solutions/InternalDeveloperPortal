@@ -57,15 +57,21 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 | [Opinionated](#opinionated) | No | Yes | Yes | Yes |
 | [workflow automation](#workflow-automation) | Getport supports any kinds of workflows and integration with blue prints and actions | Yes, by customizing | webhooks and actions | Yes |
 | [Scaffolder](#scaffolder) | Predefined and easy to create new one | Available | Yes | Yes |
+| [Auto Discovery](#auto-discovery) | Yes | No | No | No |
 | [OSS](#oss) | Port's ocean is an Opensource | Most widely accespted IDP as OS | No | No |
 | [RBAC](#rbac) | Yes | Yes, paid | Flat model but actions can be restricted only with team owners | Yes |
 | [SCIM Integration](#scim-integration) | Yes | Yes | Very wide integration | Yes |
 | [Scorecards](#scorecards) | Yes | Not so mature | Yes | Yes |
-| [Tech Docs](#tech-docs) | Yes | Yes | Yes | Yes5 |
+| [Tech Docs](#tech-docs) | Yes | Yes | Yes | Yes |
+| [Audit Logs](#audit-logs) | Yes | No | Yes | Yes
 | [Extensibility](#extensibility) | Easiest to define custom module with port | need strong type script experience and lot of coding | cant be customized | Cant be customized |
 | [Ephemeral Environments](#ephemeral-environments)| Yes | No | No | No |
 | [Incident Management](#incident-management) | Yes | Yes | No | No |
 | [Action Webhooks](#action-webhooks) | Yes | Yes | Yes | Yes |
+| [Security](#security) | Yes SOC2| No | Yes | Yes | 
+| [Real Time Sync](#real-time-sync) | Yes | No | Yes | Yes | 
+| [Gitops](#gitops) | Yes | No | Yes | Yes|
+| (Git Management)(#git-management) | Yes | Yes | Yes | Yes
 | [Pricing](#pricing) | 240USD per user per year | Free | NA | NA |
 
 
@@ -118,6 +124,9 @@ Creation of multistep workflow to manage the lifecycle of our applications.
 #### Opinionated
 Do providers have some sort of enforcement of strucutres as to how we should proceed with our IDP, all other than Port has some sort of predefined schema. This is both a pro and con of port. 
 
+#### Auto Discovery
+The ability to automatically detect data and nourish on the UI
+
 #### OSS
 opensource community support, backstage by far has been leading in OSS but it maynot be the perfect as it takes too much effort to even standup a test instance of backstage and everything is just plugin and 
 catalog in backstage. Following that Port has ocean community to support the opensource initiatives.
@@ -143,8 +152,17 @@ Changes in the IDP itself, who changed what.
 #### Incident Management
 On call support, with ticket creation escalation and resolution
 
-#### Ephemeral environments: 
+#### Ephemeral environments
 Ease to test and create mock environement to support POCs and some test cases
+
+#### Security
+If the IDP itself is secure and following standards
+
+#### Real Time Sync
+How is data reflected into IDP if a change happens
+
+#### Gitops
+Inherent support for gitops model
 
 #### Action Webhooks 
 How can we make events trigger to and from IDP
@@ -152,7 +170,28 @@ How can we make events trigger to and from IDP
 #### Pricing
 what is the license cost of per user.
 
+## User Enagement : What's and Hows
+The tool is a success if it not only saves developer's time to market but also has the least learning curve and it's a pull factor rather being pushed from org, this can be achieved if
+* The UI is appealing and has amazing UX and aesthetic design : Port does justify this once the blueprint and entities are setup
+* Focussed delivery : Not overwhelming users with yet another tool and hacving to manage more yamls and configuration. Show them what they really care about.
+* Control : Is it too much restricted? can they for once create the resources without creating too many tickets and still be in compliance with org standards
+* Adaptation and innovation : Adding new features and integration to support all sort of requests .
 
+
+## Conclusion
+Backstage has undoubtebly the most widely accepted IDP and contributed by open source community, but it is too much hassle to manage the backstage and having to do so many customizations. Getport extends the
+functionailty of backstage by following bringing your own data model, where it lets user define the whole structure of an IDP according to their standards and it simply nourishes them. We can also establish the
+relationship between different entities thus saving lot of time and auto discovery is enabled by default with this feature.
+
+## Roadmap to deployment
+Either we can go do our POC with getports preview environment without having to go over the official procurement
+or we can still keep up the backstage POC, start with getport's procurement and then use it's migration guide to move off of backstage in one go.
+
+## Impact in case of Failure
+IDP is just a portal to all the other tools and service to accelerate delivery, if it goes down it might impact the time to market as before IDP era but BAU would still be there without leading to an actual business loss.
+
+## Vendor Lockin
+Though we'd be choosing one vendor but we must ensure all our guardrails, scaffolder and blueprint are code first and we have a state managed. 
 
 
 
