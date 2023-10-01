@@ -53,7 +53,7 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 
 |          | GetPort | Backstage | OpsLevel | Cortex |
 | -------- | -------- | -------- | -------- | -------- |
-| Cataloging | Support any kind of cataloging with blue print | Predefined set of catalogs k8s, service etc | Pre defined catalog | Pre defined catalog |
+| [Cataloging](#cataloging)     | Support any kind of cataloging with blue print | Predefined set of catalogs k8s, service etc | Pre defined catalog | Pre defined catalog |
 | Opinionanted | No | Yes | Yes | Yes |
 | Row 4, Col 1 | Row 4, Col 2 | Row 4, Col 3 | Row 4, Col 4 | Row 4, Col 5 |
 | Row 5, Col 1 | Row 5, Col 2 | Row 5, Col 3 | Row 5, Col 4 | Row 5, Col 5 |
@@ -68,7 +68,46 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 | Row 14, Col 1 | Row 14, Col 2 | Row 14, Col 3 | Row 14, Col 4 | Row 14, Col 5 |
 | Row 15, Col 1 | Row 15, Col 2 | Row 15, Col 3 | Row 15, Col 4 | Row 15, Col 5 |
 
-Cataloging: It is the way as to how can you terraform your own IDP or how easy it is to customize the objects/entities in an IDP. Different firms have different use cases which cant be categorized into already existing catalog/objects, hence getPort stands out with only one of its kind as it supports any kinds. It has the model of Being your Own data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Cataloging: 
+It is the way as to how can you terraform your own IDP or how easy it is to customize the objects/entities in an IDP. Different firms have different use cases which cant be categorized into already existing catalog/objects, hence getPort stands out with only one of its kind as it supports any kinds. It has the model of Being your Own data.
 
 Scaffolers/Templates: The ease of building and maintainning software templates. All support creating new ones .
 
@@ -99,6 +138,20 @@ Action/Webhooks : How can we make events trigger to and from IDP
 
 pricing : what is the license cost of per user.
 
+
+
+[Item 1](#item-1)  
+[Item 2](#item-2)
+
+...
+
+### Item 1
+
+This is information about Item 1.
+
+### Item 2
+
+This is information about Item 2.
 
 
 
