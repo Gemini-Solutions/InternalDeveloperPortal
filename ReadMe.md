@@ -54,19 +54,19 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 |          | GetPort | Backstage | OpsLevel | Cortex |
 | -------- | -------- | -------- | -------- | -------- |
 | [Cataloging](#cataloging)     | Support any kind of cataloging with blue print | Predefined set of catalogs k8s, service etc | Pre defined catalog | Pre defined catalog |
-| [Opinionated](#Opinionated) | No | Yes | Yes | Yes |
+| [Opinionated](#opinionated) | No | Yes | Yes | Yes |
 | [workflow automation](#workflow-automation) | Row 4, Col 2 | Row 4, Col 3 | Row 4, Col 4 | Row 4, Col 5 |
-| [Scaffolder](#Scaffolder) | Row 5, Col 2 | Row 5, Col 3 | Row 5, Col 4 | Row 5, Col 5 |
-| [Scaffolder](#Scaffolder) | Row 6, Col 2 | Row 6, Col 3 | Row 6, Col 4 | Row 6, Col 5 |
-| Row 7, Col 1 | Row 7, Col 2 | Row 7, Col 3 | Row 7, Col 4 | Row 7, Col 5 |
-| Row 8, Col 1 | Row 8, Col 2 | Row 8, Col 3 | Row 8, Col 4 | Row 8, Col 5 |
-| Row 9, Col 1 | Row 9, Col 2 | Row 9, Col 3 | Row 9, Col 4 | Row 9, Col 5 |
-| Row 10, Col 1 | Row 10, Col 2 | Row 10, Col 3 | Row 10, Col 4 | Row 10, Col 5 |
-| Row 11, Col 1 | Row 11, Col 2 | Row 11, Col 3 | Row 11, Col 4 | Row 11, Col 5 |
-| Row 12, Col 1 | Row 12, Col 2 | Row 12, Col 3 | Row 12, Col 4 | Row 12, Col 5 |
-| Row 13, Col 1 | Row 13, Col 2 | Row 13, Col 3 | Row 13, Col 4 | Row 13, Col 5 |
-| Row 14, Col 1 | Row 14, Col 2 | Row 14, Col 3 | Row 14, Col 4 | Row 14, Col 5 |
-| Row 15, Col 1 | Row 15, Col 2 | Row 15, Col 3 | Row 15, Col 4 | Row 15, Col 5 |
+| [Scaffolder](#scaffolder) | Row 5, Col 2 | Row 5, Col 3 | Row 5, Col 4 | Row 5, Col 5 |
+| [OSS](#oss) | Row 6, Col 2 | Row 6, Col 3 | Row 6, Col 4 | Row 6, Col 5 |
+| [RBAC](#rbac) | Row 7, Col 2 | Row 7, Col 3 | Row 7, Col 4 | Row 7, Col 5 |
+| [SCIM Integration](#scim-integration) | Row 8, Col 2 | Row 8, Col 3 | Row 8, Col 4 | Row 8, Col 5 |
+| [Scorecards](#scorecards) | Row 9, Col 2 | Row 9, Col 3 | Row 9, Col 4 | Row 9, Col 5 |
+| [Tech Docs](#tech-docs) | Row 10, Col 2 | Row 10, Col 3 | Row 10, Col 4 | Row 10, Col 5 |
+| [Extensibility](#extensibility) | Row 11, Col 2 | Row 11, Col 3 | Row 11, Col 4 | Row 11, Col 5 |
+| [Ephemeral Environments](#ephemeral-environments)| Row 12, Col 3 | Row 12, Col 4 | Row 12, Col 5 |
+| [Incident Management](#incident-management) | Row 13, Col 2 | Row 13, Col 3 | Row 13, Col 4 | Row 13, Col 5 |
+| [Action Webhooks](#action-webhooks) | Row 14, Col 2 | Row 14, Col 3 | Row 14, Col 4 | Row 14, Col 5 |
+| [Pricing](#pricing) | Row 15, Col 2 | Row 15, Col 3 | Row 15, Col 4 | Row 15, Col 5 |
 
 
 
@@ -112,60 +112,45 @@ It is the way as to how can you terraform your own IDP or how easy it is to cust
 #### Scaffolder
 The ease of building and maintainning software templates. All support creating new ones .
 
-#### workflow automation: 
+#### workflow automation
 Creation of multistep workflow to manage the lifecycle of our applications.
 
-#### Opinionated: 
+#### Opinionated
 Do providers have some sort of enforcement of strucutres as to how we should proceed with our IDP, all other than Port has some sort of predefined schema. This is both a pro and con of port. 
 
-#### OSS: 
+#### OSS
 opensource community support, backstage by far has been leading in OSS but it maynot be the perfect as it takes too much effort to even standup a test instance of backstage and everything is just plugin and 
 catalog in backstage. Following that Port has ocean community to support the opensource initiatives.
 
-#### SCIM integration : 
+#### SCIM Integration 
 System for Cross-domain Identity Management, is an open standard that allows for the automation of user provisioning.
 
-#### Scorecards: 
+#### Scorecards
 They provide an insight into how mature our service is with the company's defined standards
 
 #### Tech docs 
 The ability to support feature rich documenation, search capabilities, audits etc
 
-#### Extensibility: 
+#### Extensibility
 Ease of extending the Functionality of an IDP by adding support of new plugins.
 
-#### RBAC: 
+#### RBAC
 roles based access control for our actions and events and visibility.
 
-#### Audit logs: 
+#### Audit Logs
 Changes in the IDP itself, who changed what.
 
-#### Incident management : 
+#### Incident Management
 On call support, with ticket creation escalation and resolution
 
 #### Ephemeral environments: 
 Ease to test and create mock environement to support POCs and some test cases
 
-#### Action/Webhooks : 
+#### Action Webhooks 
 How can we make events trigger to and from IDP
 
-#### pricing : 
+#### Pricing
 what is the license cost of per user.
-
-
-
-[Item 1](#item-1)  
-[Item 2](#item-2)
-
-...
-
-### Item 1
-
-This is information about Item 1.
-
-### Item 2
-
-This is information about Item 2.
 
 
 
