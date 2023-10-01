@@ -51,22 +51,22 @@ Spotify had similar issues as the magnitude of their microservices and infra gre
 elegant soltion enhancing the capabilities of backstage for different industries and purposes. Below is the table that does the comparison of some of the best IDPs in the market.
 We are leaving servicenow in this comparison as its not either or solution, but service now will pair with IDP. 
 
-|          | GetPort | Backstage | OpsLevel | Cortex |
+|          | GetPort | Backstage(OSS) | OpsLevel | Cortex |
 | -------- | -------- | -------- | -------- | -------- |
 | [Cataloging](#cataloging)     | Support any kind of cataloging with blue print | Predefined set of catalogs k8s, service etc | Pre defined catalog | Pre defined catalog |
 | [Opinionated](#opinionated) | No | Yes | Yes | Yes |
-| [workflow automation](#workflow-automation) | Row 4, Col 2 | Row 4, Col 3 | Row 4, Col 4 | Row 4, Col 5 |
-| [Scaffolder](#scaffolder) | Row 5, Col 2 | Row 5, Col 3 | Row 5, Col 4 | Row 5, Col 5 |
-| [OSS](#oss) | Row 6, Col 2 | Row 6, Col 3 | Row 6, Col 4 | Row 6, Col 5 |
-| [RBAC](#rbac) | Row 7, Col 2 | Row 7, Col 3 | Row 7, Col 4 | Row 7, Col 5 |
-| [SCIM Integration](#scim-integration) | Row 8, Col 2 | Row 8, Col 3 | Row 8, Col 4 | Row 8, Col 5 |
-| [Scorecards](#scorecards) | Row 9, Col 2 | Row 9, Col 3 | Row 9, Col 4 | Row 9, Col 5 |
-| [Tech Docs](#tech-docs) | Row 10, Col 2 | Row 10, Col 3 | Row 10, Col 4 | Row 10, Col 5 |
-| [Extensibility](#extensibility) | Row 11, Col 2 | Row 11, Col 3 | Row 11, Col 4 | Row 11, Col 5 |
-| [Ephemeral Environments](#ephemeral-environments)| Row 12, Col 3 | Row 12, Col 4 | Row 12, Col 5 |
-| [Incident Management](#incident-management) | Row 13, Col 2 | Row 13, Col 3 | Row 13, Col 4 | Row 13, Col 5 |
-| [Action Webhooks](#action-webhooks) | Row 14, Col 2 | Row 14, Col 3 | Row 14, Col 4 | Row 14, Col 5 |
-| [Pricing](#pricing) | Row 15, Col 2 | Row 15, Col 3 | Row 15, Col 4 | Row 15, Col 5 |
+| [workflow automation](#workflow-automation) | Getport supports any kinds of workflows and integration with blue prints and actions | Yes, by customizing | webhooks and actions | Yes |
+| [Scaffolder](#scaffolder) | Predefined and easy to create new one | Available | Yes | Yes |
+| [OSS](#oss) | Port's ocean is an Opensource | Most widely accespted IDP as OS | No | No |
+| [RBAC](#rbac) | Yes | Yes, paid | Flat model but actions can be restricted only with team owners | Yes |
+| [SCIM Integration](#scim-integration) | Yes | Yes | Very wide integration | Yes |
+| [Scorecards](#scorecards) | Yes | Not so mature | Yes | Yes |
+| [Tech Docs](#tech-docs) | Yes | Yes | Yes | Yes5 |
+| [Extensibility](#extensibility) | Easiest to define custom module with port | need strong type script experience and lot of coding | cant be customized | Cant be customized |
+| [Ephemeral Environments](#ephemeral-environments)| Yes | No | No | No |
+| [Incident Management](#incident-management) | Yes | Yes | No | No |
+| [Action Webhooks](#action-webhooks) | Yes | Yes | Yes | Yes |
+| [Pricing](#pricing) | 240USD per user per year | Free | NA | NA |
 
 
 
