@@ -53,9 +53,8 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 
 |          | GetPort | Backstage | OpsLevel | Cortex |
 | -------- | -------- | -------- | -------- | -------- |
-| Cataloging | Support any kind of cataloging with blue print | Predefined set of catalogs | | Row 1, Col 5 |
-| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 | Row 2, Col 4 | Row 2, Col 5 |
-| Row 3, Col 1 | Row 3, Col 2 | Row 3, Col 3 | Row 3, Col 4 | Row 3, Col 5 |
+| Cataloging | Support any kind of cataloging with blue print | Predefined set of catalogs k8s, service etc | Pre defined catalog | Pre defined catalog |
+| Opinionanted | No | Yes | Yes | Yes |
 | Row 4, Col 1 | Row 4, Col 2 | Row 4, Col 3 | Row 4, Col 4 | Row 4, Col 5 |
 | Row 5, Col 1 | Row 5, Col 2 | Row 5, Col 3 | Row 5, Col 4 | Row 5, Col 5 |
 | Row 6, Col 1 | Row 6, Col 2 | Row 6, Col 3 | Row 6, Col 4 | Row 6, Col 5 |
@@ -68,6 +67,40 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 | Row 13, Col 1 | Row 13, Col 2 | Row 13, Col 3 | Row 13, Col 4 | Row 13, Col 5 |
 | Row 14, Col 1 | Row 14, Col 2 | Row 14, Col 3 | Row 14, Col 4 | Row 14, Col 5 |
 | Row 15, Col 1 | Row 15, Col 2 | Row 15, Col 3 | Row 15, Col 4 | Row 15, Col 5 |
+
+Cataloging: It is the way as to how can you terraform your own IDP or how easy it is to customize the objects/entities in an IDP. Different firms have different use cases which cant be categorized into already existing catalog/objects, hence getPort stands out with only one of its kind as it supports any kinds. It has the model of Being your Own data.
+
+Scaffolers/Templates: The ease of building and maintainning software templates. All support creating new ones .
+
+workflow automation: Creation of multistep workflow to manage the lifecycle of our applications.
+
+Opinionated: Do providers have some sort of enforcement of strucutres as to how we should proceed with our IDP, all other than Port has some sort of predefined schema. This is both a pro and con of port. 
+
+OSS: opensource community support, backstage by far has been leading in OSS but it maynot be the perfect as it takes too much effort to even standup a test instance of backstage and everything is just plugin and 
+catalog in backstage. Following that Port has ocean community to support the opensource initiatives.
+
+SCIM integration : System for Cross-domain Identity Management, is an open standard that allows for the automation of user provisioning.
+
+Scorecards: They provide an insight into how mature our service is with the company's defined standards
+
+Tech docs :information_source: : The ability to support feature rich documenation, search capabilities, audits etc
+
+Extensibility: Ease of extending the Functionality of an IDP by adding support of new plugins.
+
+RBAC: roles based access control for our actions and events and visibility.
+
+Audit logs: Changes in the IDP itself, who changed what.
+
+Incident management : On call support, with ticket creation escalation and resolution
+
+Ephemeral environments: Ease to test and create mock environement to support POCs and some test cases
+
+Action/Webhooks : How can we make events trigger to and from IDP
+
+pricing : what is the license cost of per user.
+
+
+
 
 
 
