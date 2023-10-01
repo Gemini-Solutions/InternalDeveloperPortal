@@ -51,7 +51,7 @@ Spotify had similar issues as the magnitude of their microservices and infra gre
 elegant soltion enhancing the capabilities of backstage for different industries and purposes. Below is the table that does the comparison of some of the best IDPs in the market.
 We are leaving servicenow in this comparison as its not either or solution, but service now will pair with IDP. 
 
-|          | GetPort | Backstage(OSS) | OpsLevel | Cortex |
+|          | GetPort<img src="getport_image_url" alt="GetPort Image" width="50" height="50"> | Backstage(OSS) | OpsLevel | Cortex |
 | -------- | -------- | -------- | -------- | -------- |
 | [Cataloging](#cataloging)     | Support any kind of cataloging with blue print | Predefined set of catalogs k8s, service etc | Pre defined catalog | Pre defined catalog |
 | [Opinionated](#opinionated) | No | Yes | Yes | Yes |
