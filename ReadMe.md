@@ -3,6 +3,10 @@ An internal developer portal is one stop solution designed to support and facili
 the nitty girities of the complete tech stack, giving visibility to what is actually needed to be effecient serving different personas. The developer portal must have an aesthetic UI and a great UX to keep the
 customers engaging with minimal to no learning curve.
 
+![What is IDP](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/devportal.jpeg)
+
+
+
 ## How does it work & how it is different from CICD tools like Jenkins, Argo, K8s dashboard, Service Now etc?
 IDP is not the replacement to any of these tools rather, it will act as a portal to all these tools, rendering information from these golden source of truth into what exactly is needed by the team in
 rather more comprehensive manner. These tools are focussed on different domains and tech specs, like Jenkins primarily focuses on Jobs stage and pipelines, argo CD in tandem with K8s helps achieve gitops , 
@@ -75,43 +79,31 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 | [Pricing](#pricing) | 240USD per user per year | Free | NA | NA |
 
 
+## User Enagement : What's and Hows
+The tool is a success if it not only saves developer's time to market but also has the least learning curve and it's a pull factor rather being pushed from org, this can be achieved if
+* The UI is appealing and has amazing UX and aesthetic design : Port does justify this once the blueprint and entities are setup
+* Focussed delivery : Not overwhelming users with yet another tool and hacving to manage more yamls and configuration. Show them what they really care about.
+* Control : Is it too much restricted? can they for once create the resources without creating too many tickets and still be in compliance with org standards
+* Adaptation and innovation : Adding new features and integration to support all sort of requests .
 
 
+## Conclusion
+Backstage has undoubtebly the most widely accepted IDP and contributed by open source community, but it is too much hassle to manage the backstage and having to do so many customizations. Getport extends the
+functionailty of backstage by following bringing your own data model, where it lets user define the whole structure of an IDP according to their standards and it simply nourishes them. We can also establish the
+relationship between different entities thus saving lot of time and auto discovery is enabled by default with this feature.
+
+## Roadmap to deployment
+Either we can go do our POC with getports preview environment without having to go over the official procurement
+or we can still keep up the backstage POC, start with getport's procurement and then use it's migration guide to move off of backstage in one go.
+
+## Impact in case of Failure
+IDP is just a portal to all the other tools and service to accelerate delivery, if it goes down it might impact the time to market as before IDP era but BAU would still be there without leading to an actual business loss.
+
+## Vendor Lockin
+Though we'd be choosing one vendor but we must ensure all our guardrails, scaffolder and blueprint are code first and we have a state managed. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Appendix 
 #### Cataloging
 It is the way as to how can you terraform your own IDP or how easy it is to customize the objects/entities in an IDP. Different firms have different use cases which cant be categorized into already existing catalog/objects, hence getPort stands out with only one of its kind as it supports any kinds. It has the model of Being your Own data.
 
@@ -169,29 +161,5 @@ How can we make events trigger to and from IDP
 
 #### Pricing
 what is the license cost of per user.
-
-## User Enagement : What's and Hows
-The tool is a success if it not only saves developer's time to market but also has the least learning curve and it's a pull factor rather being pushed from org, this can be achieved if
-* The UI is appealing and has amazing UX and aesthetic design : Port does justify this once the blueprint and entities are setup
-* Focussed delivery : Not overwhelming users with yet another tool and hacving to manage more yamls and configuration. Show them what they really care about.
-* Control : Is it too much restricted? can they for once create the resources without creating too many tickets and still be in compliance with org standards
-* Adaptation and innovation : Adding new features and integration to support all sort of requests .
-
-
-## Conclusion
-Backstage has undoubtebly the most widely accepted IDP and contributed by open source community, but it is too much hassle to manage the backstage and having to do so many customizations. Getport extends the
-functionailty of backstage by following bringing your own data model, where it lets user define the whole structure of an IDP according to their standards and it simply nourishes them. We can also establish the
-relationship between different entities thus saving lot of time and auto discovery is enabled by default with this feature.
-
-## Roadmap to deployment
-Either we can go do our POC with getports preview environment without having to go over the official procurement
-or we can still keep up the backstage POC, start with getport's procurement and then use it's migration guide to move off of backstage in one go.
-
-## Impact in case of Failure
-IDP is just a portal to all the other tools and service to accelerate delivery, if it goes down it might impact the time to market as before IDP era but BAU would still be there without leading to an actual business loss.
-
-## Vendor Lockin
-Though we'd be choosing one vendor but we must ensure all our guardrails, scaffolder and blueprint are code first and we have a state managed. 
-
 
 
