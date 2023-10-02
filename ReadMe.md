@@ -150,10 +150,10 @@ catalog in backstage. Following that Port has ocean community to support the ope
 System for Cross-domain Identity Management, is an open standard that allows for the automation of user provisioning.
 
 #### Scorecards
-They provide an insight into how mature our service is with the company's defined standards
+They provide an insight into how mature our service is with the company's defined standards, like vulnerability, deployments, availability, security etc. Avoid too many notifications via email or teams and find what the IDP has to say under one single page. This reduces friction and it keeps on updating the insights in realtime.
 
 #### Tech docs 
-The ability to support feature rich documenation, search capabilities, audits etc
+Tech docs serve as the starting point for any given product or an initiative. It has to be feature rich and must support bringing/linking the data from external vendors like lucid, s3 etc. All the IDP does this job well. The tech doc must also has the capability to provide and extensive keyword search into what the reader is looking for.
 
 #### Extensibility
 Ease of extending the Functionality of an IDP by adding support of new plugins.
