@@ -42,6 +42,21 @@ Personas, simply put, are different entities within the organization at differen
   * Automate/Self service for Service maturity and upgrades and codefreeze.
   * Ease of onboarding of new technology without impacting others.
 
+- #### Ops
+   * A single dashboard for all my services that my team owns/monitor
+   * Single click incident management, escalation
+   * On call check/updates
+ 
+- #### SRE
+    * As an SRE I want to have the whole view of my resources and application to mee the SLO to better plan and deliver.
+    * Reduced time in incident planning and resolution
+    * Easy change management
+
+- #### Software Security
+   * Ensure all the applications are atleast above a certain threshold of security check
+   * Which apps need escalation/notification
+   * 0 day vulnerability patching.
+
 - #### Team Lead
   * Which application needs my attention the most in case of load, service maturity etc.
   * How can I save money for a certain application, application insights.
@@ -69,8 +84,9 @@ As we move up the heirarchy, we can have dashboards and scorecards which would h
 
 
 ## Service now serves the similar purpose, can we use it?
-Service now indeed is a great cataloging software for org's tech stack, incident management workflows and audits. We are not trying to replace Service now but using service now as golden source of truth
-to nourish the data into IDP and bind that with other tools which do not have integration with service now yet. The IDP is more developer facing catering to the needs for changing environement.
+Service now indeed is a great cataloging software for org's tech stack, incident management, workflows, enterprise support and plugins and audits. We are not trying to replace Service now but might as well be using service now as golden source of truth
+to nourish the data into IDP and bind that with other tools which do not have integration with service now yet. The IDP is more developer facing catering to the needs for changing environement. \ 
+Servicenow does aim to solve the similar purpose but needs evaluation as to how can we extend it's capabilities, the cost evaluation and the user experience without having to compromise security.
 
 
 ## What all options do I have for an IDP and which one should we choose from
@@ -82,28 +98,26 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 | -------- | -------- | -------- | -------- | -------- |
 | [Cataloging](#cataloging)     | Yes(any kind) | Yes(predefined) | Yes(predefined) | Yes(predefined) |
 | [Opinionated](#opinionated) | No | Yes | Yes | Yes |
-| [workflow automation](#workflow-automation) | Yes(actions and blueprints) | Yes(to some extent) | Ye(limited with actions) | Yes(webhooks) |
+| [workflow automation](#workflow-automation) | Yes(APIs and blueprints) | Yes(to some extent) | Yes(limited with actions) | Yes(webhooks) |
 | [Scaffolder](#scaffolder) | Yes | Yes | Yes | Yes |
 | [Auto Discovery](#auto-discovery) | Yes | No | No | No |
 | [OSS](#oss) | Yes (Port's Ocean) | Yes (100% OSS) | No | No |
-| [RBAC](#rbac) | Yes(policy governed) | Yes(Paid) | Yes(Flat model) | No |
-| [SCIM Integration](#scim-integration) | Yes | Yes | Yes | Yes |
-| [Scorecards](#scorecards) | Yes | Not so mature | Yes | Yes |
-| [Tech Docs](#tech-docs) | Yes | Yes | Yes | Yes |
-| [Audit Logs](#audit-logs) | Yes | No | Yes | Yes
+| [RBAC](#rbac) | Yes | Yes(Paid) | Yes(Flat model) | No |
+| [SCIM Integration](#scim-integration) | No | No | Yes | No |
+| [Scorecards](#scorecards) | Yes | Yes | Yes(Predefined checks) | Yes |
+| [Tech Docs](#tech-docs) | Yes | Yes | (plugin) | Yes | Yes (API based) |
 | [Extensibility](#extensibility) | Easiest to define custom module with port | need strong type script experience and lot of coding | cant be customized | Cant be customized |
 | [Ephemeral Environments](#ephemeral-environments)| Yes | No | No | No |
-| [Incident Management](#incident-management) | Yes | Yes | No | No |
+| [Incident Management](#incident-management) | Yes | Yes | Yes | Yes |
 | [Action Webhooks](#action-webhooks) | Yes | Yes | Yes | Yes |
 | [Security](#security) | Yes SOC2| No | Yes | Yes | 
-| [Real Time Sync](#real-time-sync) | Yes | No | Yes | Yes | 
-| [Gitops](#gitops) | Yes | No | Yes | Yes|
-| (Git Management)(#git-management) | Yes | Yes | Yes | Yes
-| [Pricing](#pricing) | 240USD per user per year | Free | NA | NA |
+| [Real Time Sync](#real-time-sync) | Yes | Yes (custom plugin?) | Yes | Yes | 
+| [Gitops](#gitops) | Yes | Yes (plugin) | Yes | Yes|
+| [Pricing](#pricing) | 240USD per user per year(heard from a colleage) | Free | No quotes (heard expensive) | NA |
 
 
 ## User Enagement : What's and Hows
-The tool is a success if it not only saves developer's time to market but also has the least learning curve and it's a pull factor rather being pushed from org, this can be achieved if
+The tool is a success if it not only saves developer's time to market but also has the least learning curve. This has to be the tool for all teams as per their needs.
 * The UI is appealing and has amazing UX and aesthetic design : Port does justify this once the blueprint and entities are setup
 * Focussed delivery : Not overwhelming users with yet another tool and hacving to manage more yamls and configuration. Show them what they really care about.
 * Control : Is it too much restricted? can they for once create the resources without creating too many tickets and still be in compliance with org standards
@@ -111,19 +125,21 @@ The tool is a success if it not only saves developer's time to market but also h
 
 
 ## Conclusion
-Backstage has undoubtebly the most widely accepted IDP and contributed by open source community, but it is too much hassle to manage the backstage and having to do so many customizations. Getport extends the
-functionailty of backstage by following bringing your own data model, where it lets user define the whole structure of an IDP according to their standards and it simply nourishes them. We can also establish the
-relationship between different entities thus saving lot of time and auto discovery is enabled by default with this feature.
+Backstage has undoubtebly been the most widely accepted IDP and contributed by open source community, but it is too much hassle to manage the backstage and having to do so many customizations. Getport extends the
+functionailty of backstage by following "bringing your own data model", where it lets user define the whole structure of an IDP according to their standards and it simply nourishes them. We can also establish the
+relationship between different entities thus saving lot of time and auto discovery is enabled by default with this feature. Opslevel is yet another tool where it leads by it's SCIM integration and serivce maturity checks, but these are overshadowed by getport's ease of extension and open source model they are trying to adopt. Cortex on the other hand, I did not find any promising feature to go forward wih the initiative.
 
 ## Roadmap to deployment
-Either we can go do our POC with getports preview environment without having to go over the official procurement
-or we can still keep up the backstage POC, start with getport's procurement and then use it's migration guide to move off of backstage in one go.
+Considering time to procurement and even have buyin from different stake holders and showcase the capabilities of the tools, we can follow two approach
+* If Security is inline, we can POC with getport's preview environement and get started with blueprints and workflows, ready to go full blown once the IDP is in
+* We can continue with our POC for backstage, develop catalog for API and cookiecutters and once in we can migrate to Port.
 
 ## Impact in case of Failure
-IDP is just a portal to all the other tools and service to accelerate delivery, if it goes down it might impact the time to market as before IDP era but BAU would still be there without leading to an actual business loss.
+IDP is just a portal to all the other tools and service to accelerate delivery, if it goes down it might impact the time to market as before IDP era but BAU would still be there without leading to an actual loss. IDP does not stand in between any critical workload.
 
 ## Vendor Lockin
-Though we'd be choosing one vendor but we must ensure all our guardrails, scaffolder and blueprint are code first and we have a state managed. 
+Though we'd be choosing one vendor but we must ensure all our guardrails, scaffolder and blueprint are code first and we have a state managed. This way, if ever
+there is a need to migrate off of to something else, we have enough tech docs, our entites as code and it would be mere lift and shift.
 
 
 ## Appendix 
@@ -139,11 +155,11 @@ The scaffolders are the templates/cookie cutters for any of the techstack, thus 
 #### workflow automation
 Creation of multistep workflow to manage the lifecycle of our applications and processes. To autodelete the cluster after certain days, code freeze, 
 maintenance windows. All the IDPs provide this feature with actions/triggers. Port does this by allowing custom blueprints and then managing the current state 
-of the system with realtime updates.
+of the system with realtime updates. \
+Note: Need more information on how we can use this in more elegant manner with conditons, checks etc.
 
 #### Auto Discovery
-The ability to automatically pull the data from different sources and nourish it on the UI. This works by defining the source and the sink and schema.
-Port does this job beautifully by having relationship among entities.
+The ability to automatically pull the data from different sources and nourish it on the UI. This works by defining the source and the sink and schema. All the IDPs are capable of doing so but Port does this job beautifully by having relationship among entities.
 
 #### OSS
 opensource community support, backstage by far has been leading in OSS but it maynot be the perfect as it takes too much effort to even standup a test instance of backstage and everything is just plugin and 
@@ -153,7 +169,7 @@ catalog in backstage. Following that Port has ocean community to support the ope
 Though IDP serves as single point of entry and enables developers to manage therir resources, but we dont want other team members to mistakenly make changes to your metadata, or deploy to prod or delete an environment. This is achieved with role based access control and is a very important and non trivial feature to implement on the UI.
 
 #### SCIM Integration 
-System for Cross-domain Identity Management, is an open standard that allows for the automation of user provisioning.
+System for Cross-domain Identity Management, is an open standard that allows for the automation of user provisioning. Opslevel has the SCIM suppport wherein Port has the support for bringing in the user claims via SSO.
 
 #### Scorecards
 They provide an insight into how mature our service is with the company's defined standards, like vulnerability, deployments, availability, security etc. Avoid too many notifications via email or teams and find what the IDP has to say under one single page. This reduces friction and it keeps on updating the insights in realtime.
