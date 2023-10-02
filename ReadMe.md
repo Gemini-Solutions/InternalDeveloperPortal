@@ -15,7 +15,7 @@ K8s dashboard is insight into my cluster and ServiceNow acting as catalog for my
 ![How IDP Sources Data](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/port%20to%20flows.png) 
 
 
-#### Here's how we bind the information into what is needed by developer into one single entity.
+> Here's how we bind the information into what is needed by developer into one single entity.
 
 ![Relationship between tools](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/er%20port.png)
 
@@ -28,29 +28,29 @@ We aim to solve this by automating and making it a selfservice for developer by 
 ### Persona
 Personas, simply put, are different entities within the organization at different roles and business deliveries. We are going to categorize them with the roles they are into and pain points they currently have and see how does IDP solve for each one of them.
 
-#### Developer
-* How to get started with my first project. Do I have a getting started guide or a scaffolder that does the job for me and i focus on business logic
-* I am already having my service deployed, now I want to move to cloud
-* new joiner, how can i get started in the firm
-* I want some resources , ephemeral ones, to whom to reach, it is very time consuming
-* so many tools to check job status, deployment status and current version canaries etc.
+- #### Developer
+    * How do I get started with my first project, what are company's guidelines that I must comply with, what is the platform I can deploy my application to
+    * I am already having my service deployed, what are other alternatives do I have in place to deploy/scale my application.
+    * How to check my Job/pipeline status and have basic visibility into my application/platform
+    * I just joined the firm, where do I start reading about org's objective and techstack and project dashboard/details.
+    * I want to request some resources like cache, database, queues or just ephemeral test environment. Whom to reach and reduce time for provisioning.
 
+- #### Devops/Platform/Infra
+  * There are so many repetitive tickets for provisioning, could be automated and users can create their own with TTL 
+  * So many orphaned clusters/resources. How to charge back to teams and ensure deletion if breaches threshold.
+  * Holistic view of all the services and infrastrucutre of the whole org along with ownership and status.
+  * Automate/Self service for Service maturity and upgrades and codefreeze.
+  * Ease of onboarding of new technology without impacting others.
 
-#### Devops/Platform/Infra
-* There are so many tickets again to create these resources
-* Orphaned test env again?
-* Overall visibility into system
-* automated service maturity notification for users.
-* onboard new technology
+- #### Team Lead
+  * Which application needs my attention the most in case of load, service maturity etc.
+  * How can I save money for a certain application, application insights.
+  * Ensuring delivery with compliance and org objectives and meeting the DORA metrics.
 
-#### Team Lead
-* Which application needs my attention the most
-* Can I reduce the cost of this service. Can this be optimized
-
-#### Dept Lead
-* How to enforce guardrails for my org
-* Are we inline with Firms goals and delivery
-* I need a code freeze, how can i do that across all org
+- #### Dept Lead
+  * How to enforce guardrails for my org
+  * View service maturity and which team needs my attention support.
+  * Tech docs and team/product road map 
 
 ## Service now serves the similar purpose, can we use it?
 Service now indeed is a great cataloging software for org's tech stack, incident management workflows and audits. We are not trying to replace Service now but using service now as golden source of truth
