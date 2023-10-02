@@ -188,5 +188,3 @@ How can we make events trigger to and from IDP
 
 #### Pricing
 what is the license cost of per user.
-
-
