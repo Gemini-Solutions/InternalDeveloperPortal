@@ -113,6 +113,7 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 | [Security](#security) | Yes SOC2| No | Yes | Yes | 
 | [Real Time Sync](#real-time-sync) | Yes | Yes (custom plugin?) | Yes | Yes | 
 | [Gitops](#gitops) | Yes | Yes (plugin) | Yes | Yes|
+| [Self Hosted](self-hosted) | No (Beta) | Yes | Yes | Yes | 
 | [Pricing](#pricing) | 240USD per user per year(heard from a colleage) | Free | No quotes (heard expensive) | NA |
 
 
@@ -178,31 +179,33 @@ They provide an insight into how mature our service is with the company's define
 Tech docs serve as the starting point for any given product or an initiative. It has to be feature rich and must support bringing/linking the data from external vendors like lucid, s3 etc. All the IDP does this job well. The tech doc must also has the capability to provide and extensive keyword search into what the reader is looking for.
 
 #### Extensibility
-Ease of extending the Functionality of an IDP by adding support of new plugins.
-
+Ease of extending the Functionality of an IDP by adding support of new plugins. This not only indicates out of the box plugins but ease of tailor amde solutions. Backstage and Port are leading this
 
 #### Audit Logs
-Changes in the IDP itself, who changed what.
+Audit logs refer to the user activity that pertain to a resource. As the IDP grows this is a must to ensure and trace back a critical/unwanted change.
 
 #### Incident Management
-On call support, with ticket creation escalation and resolution
+This is the great functionality for SREs and onCall teams, having one single pane of glass on their SLOs, raising, resolving with handy runbooks. All the IDPs have support for incident management and tie it to the service/resource.
 
 #### Ephemeral environments
 Ease to test and create mock environement to support POCs and some test cases
 
 #### Security
-If the IDP itself is secure and following standards
+There are certain industry guidelines that a software has to follow to be granted a certificate and can be trusted, all the enterprise IDPs are SOC2 Compliant
 
 #### Real Time Sync
 How is data reflected into IDP if a change happens
 
 #### Gitops
-Inherent support for gitops model
+As we move towards gitops, it is an essential metric to see if the IDPs have support for it, and all these indeed have support for gitops.
 
 #### Action Webhooks 
-How can we make events trigger to and from IDP
+How to achieve certain tasks/workload from the IDP. This let's us extend to any module that is capable of exposing webhooks.
+
+#### Self Hosted
+If the IDP is SAAS based only or we can have a fully functional running instance on prem.
 
 #### Pricing
-what is the license cost of per user.
+what is the license cost of per user. Which model we must opt in and is feasible for us.
 
 
