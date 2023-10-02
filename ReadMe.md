@@ -1,25 +1,32 @@
 ## What is an IDP
 An internal developer portal is one stop solution designed to support and facilitate collaboration and development within an organization's teams working closely for delivery. It does so by abstracting away all
 the nitty girities of the complete tech stack, giving visibility to what is actually needed to be effecient serving different personas. The developer portal must have an aesthetic UI and a great UX to keep the
-customers engaging with minimal to no learning curve.
+customers engaging with minimal to no learning curve. The IDP in its entirity can serve as Single pane of glass to the org's complete tech stack and vision.
 
 ![What is IDP](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/devportal.jpeg)
 
 
 
-## How does it work & how it is different from CICD tools like Jenkins, Argo, K8s dashboard, Service Now etc?
-IDP is not the replacement to any of these tools rather, it will act as a portal to all these tools, rendering information from these golden source of truth into what exactly is needed by the team in
-rather more comprehensive manner. These tools are focussed on different domains and tech specs, like Jenkins primarily focuses on Jobs stage and pipelines, argo CD in tandem with K8s helps achieve gitops , 
-K8s dashboard is insight into my cluster and service now acting as catalog for my apps within the org, IDP would simply source the data from these tools and nourish it on the UI by establishing the relationship
-between the IDPs so the developer doesnt have to necesarily go to all these different tools.
+### Well, we already have so many tools in place like Jenkins K8s ServiceNow, How is it different from these tools?
+IDP is not the replacement to any of these tools, rather it will act as a portal, rendering information from these golden source of truth into what exactly is needed by the team in more comprehensive manner. \
+These tools are focussed on different domains and tech specs, like Jenkins primarily focuses on Jobs stage and pipelines, argo CD in tandem with K8s helps achieve gitops , 
+K8s dashboard is insight into my cluster and ServiceNow acting as catalog for my apps within the org, IDP would simply source the data from these tools and nourish it on the UI by establishing the relationship among all the entities assosicated to my app so the developer doesnt have to necesarily go to all these different tools. The image below depicts on how IDP sources the information from these tools.
+
+![How IDP Sources Data](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/port%20to%20flows.png) 
+
+
+#### Here's how we bind the information into what is needed by developer into one single entity.
+
+![Relationship between tools](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/er%20port.png)
+
+
 
 ## Problem Statement
-Since advent of k8s and its wide adoption the devops is moving at a fast pace to keep up with industry standards which makes it painful for a developer to keep up with the constant change and learning
-new technology and at times keeping up with the current one. The developers really need to focus on business delivery and with all these tools it becomes rather difficult and time consuming to deliver.
-We want to bring in all the teams working under one umbrella, following the data model defined thus making it easy for everyone to adopt.
+Since advent of k8s and its wide adoption the devops world's been moving at a fast pace, thus making it difficult for developers to keep up with all the different tools, techstack, guardrails and compliance that an organization has to follow. This leads to friction, delay in delivery and vulnerabilities.
+We aim to solve this by automating and making it a selfservice for developer by delegating all these efforts to IDP to kickstart and deliver with minimal learning curve. Though IDP aims primarily for developer but it does come in handy for different personas within the organization.
 
 ### Persona
-The different entites in an organization and the problems they have
+Personas, simply put, are different entities within the organization at different roles and business deliveries. We are going to categorize them with the roles they are into and pain points they currently have and see how does IDP solve for each one of them.
 
 #### Developer
 * How to get started with my first project. Do I have a getting started guide or a scaffolder that does the job for me and i focus on business logic
