@@ -50,7 +50,23 @@ Personas, simply put, are different entities within the organization at differen
 - #### Dept Lead
   * How to enforce guardrails for my org
   * View service maturity and which team needs my attention support.
-  * Tech docs and team/product road map 
+  * Tech docs and team/product road map
+ 
+#### Solution
+All the problem statements with different personas can currently be solved by an IDP. We have the capability to have cookiecutters/scaffolders for devs and even platform engineering team to get started and deploy the applicaiton/resources with one single click. As these templates are governed outside of scope of individual team (at org level), we can enforce the guardrails as we want to, thus ensuring everyone complies. The apps that are already deployed, IDP provides service insights where exacty it needs patching. It also binds to different entities/tools to give an overall visibility into application.
+
+![Scaffolder](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/scaffolder.png)
+
+IDP also has the capability to deploy/manage ephemeral environments for testing purposes with TTL , thus solving orphaned resources problem and with entity relationship it binds the usage and ownership. It acts as a portal for visbility into multi cloud system, again helping the platform team with the visbility into all the resources.
+
+![Cloud Devops](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/cloud%20devops.png)
+
+As we move up the heirarchy, we can have dashboards and scorecards which would help leaders take the decision accordingly. As the snapshot below shows the overall insights into the application
+
+
+![score cards](https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/score%20card.png) 
+
+
 
 ## Service now serves the similar purpose, can we use it?
 Service now indeed is a great cataloging software for org's tech stack, incident management workflows and audits. We are not trying to replace Service now but using service now as golden source of truth
