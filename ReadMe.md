@@ -80,14 +80,14 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 
 |          | <img src="https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/port.png" alt="GetPort Image" width="100" height="40"> | <img src="https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/backstage.png" alt="Backstage Image" width="120" height="35"> | <img src="https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/opslevel.png" alt="Opslevel Image" width="120" height="35"> | <img src="https://github.com/Gemini-Solutions/InternalDeveloperPortal/blob/main/resources/cortex.png" alt="Cortex Image" width="180" height="60"> |
 | -------- | -------- | -------- | -------- | -------- |
-| [Cataloging](#cataloging)     | Support any kind of cataloging with blue print | Predefined set of catalogs k8s, service etc | Pre defined catalog | Pre defined catalog |
+| [Cataloging](#cataloging)     | Yes(any kind) | Yes(predefined) | Yes(predefined) | Yes(predefined) |
 | [Opinionated](#opinionated) | No | Yes | Yes | Yes |
-| [workflow automation](#workflow-automation) | Getport supports any kinds of workflows and integration with blue prints and actions | Yes, by customizing | webhooks and actions | Yes |
-| [Scaffolder](#scaffolder) | Predefined and easy to create new one | Available | Yes | Yes |
+| [workflow automation](#workflow-automation) | Yes(actions and blueprints) | Yes(to some extent) | Ye(limited with actions) | Yes(webhooks) |
+| [Scaffolder](#scaffolder) | Yes | Yes | Yes | Yes |
 | [Auto Discovery](#auto-discovery) | Yes | No | No | No |
-| [OSS](#oss) | Port's ocean is an Opensource | Most widely accespted IDP as OS | No | No |
-| [RBAC](#rbac) | Yes | Yes, paid | Flat model but actions can be restricted only with team owners | Yes |
-| [SCIM Integration](#scim-integration) | Yes | Yes | Very wide integration | Yes |
+| [OSS](#oss) | Yes (Port's Ocean) | Yes (100% OSS) | No | No |
+| [RBAC](#rbac) | Yes(policy governed) | Yes(Paid) | Yes(Flat model) | No |
+| [SCIM Integration](#scim-integration) | Yes | Yes | Yes | Yes |
 | [Scorecards](#scorecards) | Yes | Not so mature | Yes | Yes |
 | [Tech Docs](#tech-docs) | Yes | Yes | Yes | Yes |
 | [Audit Logs](#audit-logs) | Yes | No | Yes | Yes
@@ -128,23 +128,29 @@ Though we'd be choosing one vendor but we must ensure all our guardrails, scaffo
 
 ## Appendix 
 #### Cataloging
-It is the way as to how can you terraform your own IDP or how easy it is to customize the objects/entities in an IDP. Different firms have different use cases which cant be categorized into already existing catalog/objects, hence getPort stands out with only one of its kind as it supports any kinds. It has the model of Being your Own data.
-
-#### Scaffolder
-The ease of building and maintainning software templates. All support creating new ones .
-
-#### workflow automation
-Creation of multistep workflow to manage the lifecycle of our applications.
+Catalog is considered to be the most importan piece in an IDP, which basically is how would certain piece of information be shown and bind together and reflect what is intended for an organization. All the IDPs support cataloging by different means.
 
 #### Opinionated
-Do providers have some sort of enforcement of strucutres as to how we should proceed with our IDP, all other than Port has some sort of predefined schema. This is both a pro and con of port. 
+This refers to how IDPs already have categorized their platform enforcing us to do something, all other than Port has some sort of predefined schema. This is both a pro and con of port. It does allow us to create any schema/entity but it becomes an overkill for a basic catalog like services or environemnt etc. 
+
+#### Scaffolder
+The scaffolders are the templates/cookie cutters for any of the techstack, thus enabling one click solution for developers to get started. All the IDPs support multiple scaffolder and can even be tailor made.
+
+#### workflow automation
+Creation of multistep workflow to manage the lifecycle of our applications and processes. To autodelete the cluster after certain days, code freeze, 
+maintenance windows. All the IDPs provide this feature with actions/triggers. Port does this by allowing custom blueprints and then managing the current state 
+of the system with realtime updates.
 
 #### Auto Discovery
-The ability to automatically detect data and nourish on the UI
+The ability to automatically pull the data from different sources and nourish it on the UI. This works by defining the source and the sink and schema.
+Port does this job beautifully by having relationship among entities.
 
 #### OSS
 opensource community support, backstage by far has been leading in OSS but it maynot be the perfect as it takes too much effort to even standup a test instance of backstage and everything is just plugin and 
-catalog in backstage. Following that Port has ocean community to support the opensource initiatives.
+catalog in backstage. Following that Port has ocean community to support the opensource initiatives which takes in the heavy lifting of binding the data to IDP and all we have to focus on business use case.
+
+#### RBAC
+Though IDP serves as single point of entry and enables developers to manage therir resources, but we dont want other team members to mistakenly make changes to your metadata, or deploy to prod or delete an environment. This is achieved with role based access control and is a very important and non trivial feature to implement on the UI.
 
 #### SCIM Integration 
 System for Cross-domain Identity Management, is an open standard that allows for the automation of user provisioning.
@@ -158,8 +164,6 @@ Tech docs serve as the starting point for any given product or an initiative. It
 #### Extensibility
 Ease of extending the Functionality of an IDP by adding support of new plugins.
 
-#### RBAC
-roles based access control for our actions and events and visibility.
 
 #### Audit Logs
 Changes in the IDP itself, who changed what.
