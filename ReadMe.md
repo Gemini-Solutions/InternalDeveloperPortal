@@ -113,7 +113,7 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 | [Security](#security) | Yes SOC2| No | Yes | Yes | 
 | [Real Time Sync](#real-time-sync) | Yes | Yes (custom plugin?) | Yes | Yes | 
 | [Gitops](#gitops) | Yes | Yes (plugin) | Yes | Yes|
-| [Self Hosted](self-hosted) | No (Beta) | Yes | Yes | Yes | 
+| [Self Hosted](#self-hosted) | No (Beta) | Yes | Yes | Yes | 
 | [Pricing](#pricing) | 240USD per user per year(heard from a colleage) | Free | No quotes (heard expensive) | NA |
 
 
