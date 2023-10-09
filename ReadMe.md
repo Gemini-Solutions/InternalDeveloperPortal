@@ -114,7 +114,7 @@ We are leaving servicenow in this comparison as its not either or solution, but 
 | [Real Time Sync](#real-time-sync) | Yes | Yes (custom plugin?) | Yes | Yes | 
 | [Gitops](#gitops) | Yes | Yes (plugin) | Yes | Yes|
 | [Self Hosted](#self-hosted) | No (Beta) | Yes | Yes | Yes | 
-| [Pricing](#pricing) | 240USD per user per year(heard from a colleage) | Free | No quotes (heard expensive) | NA |
+| [Pricing](#pricing) | 30 USD p/m/u (subject to commitment and discount) | Free | No quotes yet (heard expensive) | NA |
 
 
 ## User Enagement : What's and Hows
