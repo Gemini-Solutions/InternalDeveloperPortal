@@ -16,8 +16,8 @@ spec:
     - title: Provide some simple information
       required:
         - component_id
+        - description
         - owner
-        - java_package_name
       properties:
         component_id:
           title: Name
