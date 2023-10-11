@@ -1,0 +1,26 @@
+# values.yaml
+deployment:
+  replicaCount: 2
+  image:
+    repository: registry-np.geminisolutions.com/hpipe/${{values.destination}}
+    tag: latest
+  resources:
+    requests:
+      memory: "64Mi"
+      cpu: "250m"
+    limits:
+      memory: "128Mi"
+      cpu: "500m"
+
+service:
+  port: 8080
+  targetPort: 8080
+
+virtualservice:
+  host: ${{values.component_id}}.geminisolutions.com
+  gateway: gateway
+  route:
+    - destination:
+        host: ${{values.component_id}}
+        port:
+          number: 8080

@@ -1,0 +1,17 @@
+# templates/virtualservice.yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: {{ .Release.Name }}-virtualservice
+  namespace: istio-system
+spec:
+  hosts:
+    - {{ .Values.virtualservice.host }}
+  gateways:
+    - {{ .Values.virtualservice.gateway }}
+  http:
+    - route:
+        - destination:
+            host: {{ .Values.virtualservice.route[0].destination.host }}
+            port:
+              number: {{ .Values.virtualservice.route[0].destination.port.number }}

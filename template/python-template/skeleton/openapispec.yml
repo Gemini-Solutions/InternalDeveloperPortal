@@ -1,0 +1,148 @@
+openapi: 3.0.0
+info:
+  title: Employee Details API
+  version: 1.0.0
+  description: CRUD operations for managing employee details
+paths:
+  /employees:
+    get:
+      summary: Get All Employees
+      operationId: getEmployees
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  employees:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                        name:
+                          type: string
+                        position:
+                          type: string
+      tags:
+        - Employees
+    post:
+      summary: Create an Employee
+      operationId: createEmployee
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                position:
+                  type: string
+      responses:
+        '201':
+          description: Employee created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  position:
+                    type: string
+      tags:
+        - Employees
+  /employees/{employee_id}:
+    get:
+      summary: Get Employee by ID
+      operationId: getEmployeeById
+      parameters:
+        - name: employee_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  employee:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                      name:
+                        type: string
+                      position:
+                        type: string
+        '404':
+          description: Employee not found
+      tags:
+        - Employees
+    put:
+      summary: Update Employee by ID
+      operationId: updateEmployeeById
+      parameters:
+        - name: employee_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                position:
+                  type: string
+      responses:
+        '200':
+          description: Employee updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  position:
+                    type: string
+        '404':
+          description: Employee not found
+      tags:
+        - Employees
+    delete:
+      summary: Delete Employee by ID
+      operationId: deleteEmployeeById
+      parameters:
+        - name: employee_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Employee deleted successfully
+        '404':
+          description: Employee not found
+      tags:
+        - Employees
+tags:
+  - name: Employees
