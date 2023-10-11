@@ -2,7 +2,7 @@ node('image_builder_trivy') {
    stage('code-checkout') {
          dir ('hpipe_backend') {
          checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg:  [], \
-userRemoteConfigs: [[credentialsId: 'admingithub', url: 'git@github.com:Gemini-Solutions/${{values.destination}}.git']]])
+userRemoteConfigs: [[credentialsId: 'admingithub', url: 'git@github.com:gem-aman/backstage-python.git']]])
          }
     }
   try {
@@ -10,12 +10,12 @@ userRemoteConfigs: [[credentialsId: 'admingithub', url: 'git@github.com:Gemini-S
             dir ('hpipe_backend') {
               container('docker-image-builder-trivy') {
                 withCredentials([usernamePassword(credentialsId: 'docker_registry', passwordVariable: 'docker_pass', usernameVariable: 'docker_user')]) {
-              sh 'docker image build -f DockerFile -t registry-np.geminisolutions.com/${{values.destination}} .'
+              sh 'docker image build -f DockerFile -t registry-np.geminisolutions.com/backstage-python .'
                  
 	}
                    sh '''docker login -u $docker_user -p $docker_pass https://registry-np.geminisolutions.com'''
-              sh 'docker push registry-np.geminisolutions.com/${{values.destination}}'
-              sh 'docker push registry-np.geminisolutions.com/${{values.destination}}'
+              sh 'docker push registry-np.geminisolutions.com/backstage-python'
+              sh 'docker push registry-np.geminisolutions.com/backstage-python'
            }
          }
         }
@@ -24,7 +24,7 @@ userRemoteConfigs: [[credentialsId: 'admingithub', url: 'git@github.com:Gemini-S
                    container('docker-image-builder-trivy') {
                    kubeconfig(credentialsId: 'KubeConfigCred') {
                    sh '/usr/local/bin/kubectl apply -f Deployment_dev.yaml -n dev'
-                   sh '/usr/local/bin/kubectl rollout restart Deployment hpipebackend -n dev'
+                   sh '/usr/local/bin/kubectl rollout restart Deployment backstage-python -n dev'
 
                    }
                    }
@@ -35,4 +35,3 @@ userRemoteConfigs: [[credentialsId: 'admingithub', url: 'git@github.com:Gemini-S
      //sh 'echo current_image="registry-np.geminisolutions.com/hpipe/hpipe_backend/hpipe:1.0-$BUILD_NUMBER" > build.properties'
      //archiveArtifacts artifacts: 'build.properties', onlyIfSuccessful: true
   }
-    }
