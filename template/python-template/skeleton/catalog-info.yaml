@@ -42,6 +42,7 @@ spec:
   owner: ${{values.owner | dump}}
   system: artist-engagement-portal
   dependsOn: ['resource:artists-db']
+  dependsOn: ['component:wayback-archive']
   apiConsumedBy: ['component:www-artist']
   providesApis:
     - employee
