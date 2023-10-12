@@ -43,7 +43,7 @@ spec:
   system: artist-engagement-portal
   dependsOn: 
   - 'component:wayback-archive'
-  -  'resource: queue-proxy'
+  -  'resource:default/artists-db'
   apiConsumedBy: ['component:www-artist']
   providesApis:
     - employee
