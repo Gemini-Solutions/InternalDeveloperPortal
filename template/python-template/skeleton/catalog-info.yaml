@@ -41,8 +41,9 @@ spec:
   lifecycle: experimental
   owner: ${{values.owner | dump}}
   system: artist-engagement-portal
-  dependsOn: ['resource:artists-db']
-  dependsOn: ['component:wayback-archive']
+  dependsOn: 
+  - 'component:wayback-archive'
+  -  'resource: queue-proxy'
   apiConsumedBy: ['component:www-artist']
   providesApis:
     - employee
@@ -50,3 +51,5 @@ spec:
     - hello-world
   consumesApis:
     - wayback-archive
+  subcomponentOf:
+    - playback-order  
