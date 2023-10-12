@@ -51,5 +51,3 @@ spec:
     - hello-world
   consumesApis:
     - wayback-archive
-  subcomponentOf:
-    - 'playback-order'  
