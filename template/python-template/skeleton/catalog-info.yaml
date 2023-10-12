@@ -52,4 +52,4 @@ spec:
   consumesApis:
     - wayback-archive
   subcomponentOf:
-    - playback-order  
+    - 'playback-order'  
