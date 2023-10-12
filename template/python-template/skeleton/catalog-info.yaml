@@ -13,6 +13,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     backstage.io/kubernetes-id: "python-backstage-test"
     sonarqube.org/project-key: "Gempayroll_BETA"
+    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
   links:
     - url: https://example.com/user
       title: Examples Users
@@ -35,8 +36,6 @@ metadata:
     - url: https://example.com/alert
       title: Alerts
       icon: alert
-  annotations:
-    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
 spec:
   type: service
   lifecycle: experimental
